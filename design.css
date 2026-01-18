@@ -1,13 +1,72 @@
-body {
-  background-color: #f5f3ff; /* lilac */
-  color: #1f2937;
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5 rem;
+  background-color: rgb(137, 69, 201);
 }
 
-section {
-  background-color: #fffdf5; /* cream */
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  gap: 7rem;
+ }
+body{
+  background-color: rgb(71, 6, 133);
+  font-family: 'poppins', sans-serif;
 }
 
 a {
-  color: #6d28d9;
+  color: yellow;
 }
+
+ header h1 {
+  color: white;
+  text-align: center;
+  padding: 15 rem;
+  font-weight: 500;
+ }
+
+ .hero{
+  background-color:rgb(137, 69, 201);
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+ }
+
+ .about{
+  background-color:rgb(137, 69, 201);
+  color: white;
+ }
+ .stack{
+  background-color:rgb(137, 69, 201);
+  color: white;
+ }
+
+  .projects{
+  background-color:rgb(137, 69, 201);
+  color: white;
+  }
+
+.contact{
+background-color:rgb(137, 69, 201);
+color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
