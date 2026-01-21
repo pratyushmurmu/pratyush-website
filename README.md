@@ -51,7 +51,7 @@ I also learned the importance of using tools and resources (documentation, onlin
 
 ## 🚀 Live Preview
 
-🔗 **Live Website:** *(Link will be added after hosting)*  
+🔗 **Live Website:** **  
 📂 **GitHub Repository:** *(You are here)*
 
 ---

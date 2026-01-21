@@ -269,12 +269,29 @@ nav ul {
     margin-left: 5px;        /* optional spacing */
 }
 
-.gitrepo{
-    width: 30px;    /* change size as needed */
-    height: 30px;   /* keeps it square */
-    vertical-align: middle;  /* aligns with text nicely */
-    margin-right: 5px;        /* optional spacing */
+.github-icon {
+  font-size: 32px;
+  color: #ffffff; /* white */
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+
+.project-links a:hover .github-icon {
+  color: #00f5d4; /* optional hover color */
+  transform: scale(1.1);
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-links a:last-child {
+  margin-left: auto; /* 👈 pushes GitHub to the right */
+}
+
+
 
 .netlify{
     width: 30px;    /* change size as needed */
