@@ -51,7 +51,7 @@ I also learned the importance of using tools and resources (documentation, onlin
 
 ## 🚀 Live Preview
 
-🔗 **Live Website:** **  
+🔗 **Live Website:** *[View Portfolio](https://chimerical-kelpie-71bef7.netlify.app/)*  
 📂 **GitHub Repository:** *(You are here)*
 
 ---
