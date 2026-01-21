@@ -269,6 +269,68 @@ nav ul {
     margin-left: 5px;        /* optional spacing */
 }
 
+.gitrepo{
+    width: 30px;    /* change size as needed */
+    height: 30px;   /* keeps it square */
+    vertical-align: middle;  /* aligns with text nicely */
+    margin-right: 5px;        /* optional spacing */
+}
+
+.netlify{
+    width: 30px;    /* change size as needed */
+    height: 30px;   /* keeps it square */
+    vertical-align: middle;  /* aligns with text nicely */
+    margin-left: 5px;        /* optional spacing */
+}
+
+.websiteimg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
 
 
+.project-card {
+  display: flex;
+  flex-direction: column; /* 👈 key change */
+  width: 380px;           /* narrower width */
+  min-height: 520px;      /* taller height */
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-info {
+  padding: 1.5rem;
+  flex-grow: 1; /* pushes links to bottom */
+}
+
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* 🌈 Bright contrasting card */
+.project-card-alt {
+  background: linear-gradient(135deg, #00f5d4, #4cc9f0);
+  color: #000;
+}
+
+.project-card-alt .project-links a {
+  border-color: #000;
+  color: #000;
+}
+
+.project-card-alt .project-links a:hover {
+  background: #000;
+  color: #00f5d4;
+}
+
+.projects-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 
