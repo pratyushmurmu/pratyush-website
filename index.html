@@ -11,11 +11,13 @@
 
     <link rel="stylesheet" href="design.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <form name="contact" method="POST" data-netlify="true">
+
 
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="head">
+        <nav class="navbar glass">
             <div class="hamburger" aria-label="Toggle navigation menu">&#9776;</div> <!-- hamburger icon -->
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -24,6 +26,10 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+  🌙
+</button>
+
         </nav> 
     <div class="header-content">
   <h1>Welcome to my Website 🙏</h1>
@@ -36,7 +42,6 @@
 </div>
 
 </div>
-
     </header>
 
     <main>
@@ -146,23 +151,56 @@
         </section>
 
         <section id="contact" class="contact reveal">
-            <h2> Contact Me </h2>
-            <p> Feel free to reach out to me at:<br>
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out — I’ll get back to you as soon as I can.</p>
+<!-- Connect to Netlify Forms for the inputs you'll be getting from others using the form below -->
+<div class="form-container">
+<form
+  class="contact-form"
+  name="contact"
+  method="POST"
+  data-netlify="true"
+>
+  <!-- REQUIRED for Netlify -->
+  <input type="hidden" name="form-name" value="contact">
+
+  <div class="form-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+  </div>
+
+  <button type="submit" class="hero-btn">Send Message</button>
+</form>
+</div>
+<form ... action="/success.html">
 
 
-                
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/pratyush-murmu-25b105334/" target="_blank">
-            <img class="linkedin" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="LinkedIn">
-            </a>
-            <br>         
-        
-            GitHub:
-            <a href="https://github.com/PratyushMurmu" target="_blank">
-            <img class="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
-            </a>
-        </p>
-        </section>
+
+  <div class="contact-links">
+    <p>Or find me here:</p>
+
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/pratyush-murmu-25b105334/" target="_blank">
+      <img class="linkedin" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="LinkedIn">
+    </a>
+
+    GitHub:
+    <a href="https://github.com/PratyushMurmu" target="_blank">
+      <img class="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+    </a>
+  </div>
+</section>
+
     </main>
 
     <footer>
