@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" href="design.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <form name="contact" method="POST" data-netlify="true">
 
 
 </head>
@@ -159,10 +158,19 @@
   class="contact-form"
   name="contact"
   method="POST"
+  action="/success.html"
   data-netlify="true"
+  netlify-honeypot="bot-field"
 >
   <!-- REQUIRED for Netlify -->
   <input type="hidden" name="form-name" value="contact">
+
+  <p hidden>
+    <label>
+      Don't fill this out:
+      <input name="bot-field">
+    </label>
+  </p>
 
   <div class="form-group">
     <label for="name">Your Name</label>
@@ -182,7 +190,6 @@
   <button type="submit" class="hero-btn">Send Message</button>
 </form>
 </div>
-<form ... action="/success.html">
 
 
 
